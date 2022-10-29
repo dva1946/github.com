@@ -1,0 +1,130 @@
+ /*
+Theme Name: Sparkling Child
+Theme URI: http://colorlib.com/wp/themes/sparkling
+Template: sparkling
+Author: Colorlib
+Author URI: http://colorlib.com/
+Description: Sparkling is a clean minimal and responsive WordPress theme well suited for travel, health, business, finance, portfolio, design, art, photography, personal, ecommerce and any other creative websites and blogs. Developed using Bootstrap 3 that makes it mobile and tablets friendly. Theme comes with full-screen slider, social icon integration, author bio, popular posts widget and improved category widget. Sparkling incorporates latest web standards such as HTML5 and CSS3 and is SEO friendly thanks to its clean structure and codebase. It has dozens of Theme Options based on WordPress Customizer to change theme layout, colors, fonts, slider settings and much more. Theme is also translation and multilingual ready, compatible with WPML and is available in Spanish, French, Dutch, Polish, Russian, German, Brazilian Portuguese, Portuguese (Portugal), Persian (Iranian language), Romanian, Turkish, Bulgarian, Japanese, Lithuanian, Czech, Ukrainian, Traditional Chinese, Simplified Chinese, Indonesian, Estonian, Spanish (Argentina), Hungarian and Italian. Sparkling is a free WordPress theme with premium functionality and design. Theme is ecommerce ready thanks to its WooCommerce integration. Now theme is optimized to work with bbPress, Contact Form 7, Jetpack, WooCommerce and other popular free and premium plugins. Lately we introduced a sticky/fixed navigation that you can enable or disable via WordPress Customizer.
+Tags: blog,news,e-commerce
+Version: 2.4.7.1597436409
+Updated: 2020-08-14 20:20:09
+*/
+/* 
+Form Styling / CSS
+Filename = FormStylingWithCSS.css
+Source = https://www.w3schools.com/howto/howto_css_responsive_form.asp
+========================================================================
+*/
+
+/* 12-05-19: Form CSS */
+/* 01-01-20: Added .col-50 CSS & .col-25b */
+/* 06-19-20 in .container
+    06-19-20 add width & max width 2 lines
+*/
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size: 20px;
+
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+/* Style the container 06-19-20 add width & max width 2 lines*/
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 16px;
+  border:2px solid #ccc;
+  width: auto;
+  max-width: 1200px;
+ 
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+
+}
+.col-25b {
+  float: left;
+  width: 25%;
+  font-weight: 900;
+  margin-top: 6px;
+
+}
+/* Floating column for inputs: 50% width */
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other 
+*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+} 
+
+/* DVA 12-22-19 change two lines: padding and font-size */
+/* FROM: parent theme style.css */
+/* = Navigation (line 966) */
+
+/* DVA 12-22-19 change two lines: padding and font-size */
+/* Does not work, so have in custom css on theme */
+/* FROM: style.css parent theme */
+/* = Navigation (line 966) */
+
+.post-navigation a,
+.page-numbers,
+.pagination .prev,
+.pagination .next {
+    padding: 1px 14px;
+    font-size: 20px !important;
+}
+
