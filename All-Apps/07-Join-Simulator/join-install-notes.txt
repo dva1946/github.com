@@ -1,0 +1,31 @@
+filename: join-install-notes.txt
+create_date: 2022-04-25
+last_update_date: 2022-09-30
+author: Dave Van Abel
+license: GNU General Public License version 3 https://opensource.org/licenses/GPL-3.0
+
+Reading: https://wpappsforthat.com/index.php/registration-join-simulator-slideshow/
+Reading: https://wpappsforthat.com/index.php/registration-join-simulator-code-slideshow/
+
+This is a the basic PHP script with a bit of HTML. I am not here to teach 101 Anything like:
+PHP, MySQL, HTML or CSS. However included some styling. Separate file(s) for CSS will be included, 
+and some Custom CSS that can (likely) can be included in your theme.
+
+If you need to learn about PHP, Database, SQL, CSS or HTML your best should GOOGLE. 
+Additionally, throughout my series of Apps you will see extensive PHP code plus good Queries.
+
+So my contribution to teaching is within the Apps.
+
+PHP code is written in as PROCEDURAL, not OOP (Object Orientated) because it is simpler and 
+very good for sharing. Most Apps have ample comments.
+
+Apps will be released in order of complexity (with a few exceptions), so people can advance their
+skills progressively.
+
+While learning how to build Apps, seldom did I find complete Apps. I will try to provide complete Apps,
+which includes database table definitions complete with loadable schemas in SQL format, so you can import
+to your Wordpress database. 
+
+Hopefully what I have and am providing will get you started.
+
+Dave

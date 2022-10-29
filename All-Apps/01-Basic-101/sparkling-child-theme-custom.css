@@ -1,0 +1,188 @@
+sparkling-child-theme-custom.css
+/* 11-22-20 Code from MS and bolds menus. Likely best css */
+/* DVA 07-06-19 - Code from metal shop site & reduced duplicate css vs Appearance settings */
+/* DVA 11-20-18 - Copied from SouthernAZ.org 11-24-18
+Only add values that are not default 
+in Sparkling style.css
+*/
+/* 11-26-18 Remove Footer Displays */
+
+/* =Navigation */
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:focus, 
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>.caret {
+  background-color: #bfbfbf; /* 11-28-18 background of selected in pulldown w/o hover */
+    color: #636467; /* 11-27-18: Color of item text in pulldown (dark gray, not black) */
+}
+
+.dropdown-menu {
+    font-size: 14px;
+}
+
+/* mouse over link .page-links does not work */
+a:hover {
+    color: #ff0000;
+}
+
+/* Border enhancements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    color: #666;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+/* text in box enhancements */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    color: #111;
+}
+
+/* 11-26-18 Remove Footer Displays */
+/* 03-19-19 Discovered can still add footer widgets and they show up */
+footer#colophon {
+    display: none;
+}
+
+/* 04-05/06-19 Widget CSS changes */
+#secondary .widget {
+    color: #000;
+}
+#secondary .widget a {
+    color: #000;
+}
+#secondary .widget > h3.widget-title {
+    color: #000;
+}
+
+/* 10-16-19 SQL Report Styling  EXPERIMENTAL */
+.ELISQLREPORTS-table {
+}
+.ELISQLREPORTS-Header-Row th {
+	background-color: #01B292;
+	padding: 4px;
+}
+.ELISQLREPORTS-Odd-Row {
+	background-color: #f2f2f2;
+	padding: 4px;
+}
+.ELISQLREPORTS-Even-Row {
+	padding: 4px;
+}
+
+/* ************* */
+/* PODS 10-17-19 */
+/* ************* */
+
+/* 10-08-19 ADD for Pods */
+/* Does not work in style.css
+ in child theme 10-10-19 */
+
+/* ************/
+/* 1.0 Tables */
+/* ************/
+
+/* Table */
+.pods-table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	table-layout:auto;
+}
+/* Header Row */
+.pods-th {
+	background-color: #01B292;
+	border: 1px solid;
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+}
+.pods-th-alignrt {
+	background-color: #01B292;
+	border: 1px solid;
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+	text-align: right;
+}
+.pods-th-alignctr {
+	background-color: #01B292;
+	border: 1px solid;
+	font-weight: bold;
+	padding: 4px 4px 4px 4px;
+	text-align: center;
+}
+/* Body Row */
+.pods-tr {
+	border: 1px solid;
+	padding: 4px 4px 4px 4px;
+}
+.pods-tr-alignrt {
+	border: 1px solid;
+	padding: 4px 4px 4px 4px;
+	text-align: right;
+}
+.pods-tr-alignctr {
+	border: 1px solid;
+	margin: 2px 4px 2px 4px;
+	padding: 4px 4px 4px 4px;
+	text-align: center;
+}
+/* 10-11-19: Custom Table CSS / Stylng */
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+	table-layout:auto;
+		font-size: 20px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+	background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+/* 01-07-20 Copied from GVAZ */
+/* 12-08-19 removed form styling and added to child them style.css file. This is used in New Form for php work */
+
+/* DVA 12-22-19 change two lines: padding and font-size */
+/* FROM: style.css parent theme */
+/* = Navigation (line 966) */
+
+.post-navigation a,
+.page-numbers,
+.pagination .prev,
+.pagination .next {
+    padding: 1px 14px;
+    font-size: 20px;
+}
+

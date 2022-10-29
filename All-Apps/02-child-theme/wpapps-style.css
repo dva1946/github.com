@@ -1,0 +1,207 @@
+/**
+ * CSS File Name: wpapps-style.css
+ * Use: wpappsforthat.com
+ * Author: Dave Van Abel
+ * Author URI: https://wpappsforthat.com/
+ * Description: WpAppsForThat.com custom stylesheet intended to be used in his own Apps.
+ * Created: 2022-07-02
+ * Updated: 2022-10-06
+ * Version: 1.0.002
+*/
+
+/* 
+  10-06-22 DVA Now using for Github.com and incrementing the version number.
+           Most likely this style sheet will be integrated into all Apps.
+  07-02-22 DVA preparing to 1) Rename & 2) Make it a stylesheet that loads only once 
+  and can be called by any php file.
+  This is new for us and follows this/these document pages: 
+    https://webdesign.tutsplus.com/tutorials/loading-css-into-wordpress-the-right-way--cms-20402
+    https://www.w3schools.com/css/
+    */
+
+/* TEST CSS from www.w3schools.com/css/ */
+
+/* An ELEMENT Selector (DEMO ONLY) */
+    /* 
+    p {
+        text-align: center;
+        color: red;
+    } 
+    */
+
+/* An ID Selector  (DEMO, BUT USEFUL. Maybe rename later! */
+
+  #para1 {
+    text-align: center;
+    color: red;
+  }
+
+/* A CLASS Selector - VERY USEFUL & CAN ENHANCE */
+
+  /*
+  .center {
+    text-align: center;
+    color: red;
+  }
+  */
+
+/* An ELEMENT & CLASS Selector (DEMO ONLY) */
+
+/* 
+  p.center {
+    text-align: center;
+    color: red; 
+  }
+  */
+
+/* The UNIVERSAL Selector - not too sure what do with it! (DEMO ONLY) */
+  /*  
+  .center {
+    text-align: center;
+    color: blue;
+  }
+  */
+
+/* An ELEMENT GROUPING Selector (Watch for over riding by this or others */
+
+  /*
+  h1, h2, p {
+    text-align: center;
+    color: purple;
+  }
+  */
+
+/* An ELEMENT = h2 Background Color (color, hex and more options) */
+
+  /*
+  h2 {
+    background-color: #3cb371;
+  }
+  */
+
+/* An ELEMENT = body Background Color (entire page is light=Gray & text=Black - big power!) */
+ 
+  /* 
+    body {
+      background-color: LightGray;
+      color: black;
+    }
+  */
+
+/* A BORDER Element (EX: put in app: <p class="solid">Hi Dave </p.)
+      Reading required to learn much more, like shorthand */
+  
+      /* 
+  p.solid {
+    border-style: solid;
+  }
+  */
+
+ /* A BORDER Selector using shorthand (border-width, border-style (required) & border-color*/
+  /* 
+  p {
+    border: 2px solid red;
+  }
+  */
+
+/* body, h1 & div SELECTORS (research div) */
+  /* 
+    /* body {
+      background-color: lightgrey;
+      color: blue;
+    }
+  */
+  /*
+    h1 {
+      background-color: black;
+      color: white;
+    }
+  */
+
+  /*
+  div {
+    background-color: blue;
+    color: white;
+  }
+  */
+
+/* FONTS - I am leaving out for now as I have a mixed site: FSE & Apps */
+
+ /* LINK(S) - Initial findings w/tweaks seem fine */
+
+ a:link, a:visited {
+  background-color: lightskyblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: lightgoldenrodyellow;
+}
+
+ /* A SIMPLE & RESPONSIVE TABLE Selector - req's <div above & below table */
+/* 
+ table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+ */
+ 
+ /*********************************************************/
+ /* A Fancy Table (Only need this: <table id="customers"> */
+ /*********************************************************/
+ 
+ #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* A Custom CLASS for Upload File App */
+
+div.uploadfile-app {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;  /* Over-rides above setting */
+}
+ /**************************************************************/
+ /* END: A Fancy Table (Only need this: <table id="customers"> */
+ /**************************************************************/
+
+/* A Custom CLASS for an error message, used in my-file-upload-1.php */
+
+#div.err-uploadfile-app {
+  text-align: center;
+  color: red;
+}
+
+
+
+
